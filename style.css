@@ -1,4 +1,3 @@
-/* ==================== CONFIGURAÇÕES GLOBAIS ==================== */
 :root {
   --gold: #d4af37;
   --gold-light: #f8e7a6;
@@ -47,7 +46,6 @@ a:hover, a:focus {
   outline-offset: 4px;
 }
 
-/* ==================== CENÁRIO 3D IMERSIVO ==================== */
 .index {
   min-height: 100vh;
   display: flex;
@@ -57,7 +55,6 @@ a:hover, a:focus {
   perspective: 1200px;
 }
 
-/* Tabuleiro infinito com movimento parallax */
 .chess-floor {
   position: absolute;
   top: 0;
@@ -82,7 +79,6 @@ a:hover, a:focus {
   100% { transform: rotateX(60deg) translateZ(-50px) translateY(80px); }
 }
 
-/* Profundidade visual */
 .overlay {
   position: absolute;
   top: 0;
@@ -93,7 +89,6 @@ a:hover, a:focus {
   z-index: -2;
 }
 
-/* Efeito de luz pulsante no centro */
 .checkmate-light {
   position: absolute;
   top: 50%;
@@ -115,7 +110,6 @@ a:hover, a:focus {
   100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.25); }
 }
 
-/* Partículas decorativas animadas */
 .particle {
   position: absolute;
   font-size: 1.8rem;
@@ -132,7 +126,6 @@ a:hover, a:focus {
   50% { transform: translateY(-25px) rotate(10deg); opacity: 0.9; }
 }
 
-/* ==================== NAVBAR ==================== */
 .navbar {
   width: 100%;
   height: 70px;
@@ -230,7 +223,6 @@ a:hover, a:focus {
   transform: scale(0.97);
 }
 
-/* Botão de menu móvel */
 .toggle_btn {
   color: var(--gold);
   font-size: 1.7rem;
@@ -240,14 +232,14 @@ a:hover, a:focus {
   transition: all var(--transition-fast);
 }
 
-.toggle_btn:hover, .toggle_btn:focus {
+.toggle_btn:hover,
+.toggle_btn:focus {
   color: var(--gold-light);
   transform: scale(1.15);
   outline: 2px solid var(--gold);
   border-radius: 50%;
 }
 
-/* Menu dropdown móvel */
 .dropdown_menu {
   position: absolute;
   top: 70px;
@@ -279,7 +271,8 @@ a:hover, a:focus {
   transition: background 0.25s ease;
 }
 
-.dropdown_menu li:hover, .dropdown_menu li:focus-within {
+.dropdown_menu li:hover,
+.dropdown_menu li:focus-within {
   background: rgba(124, 67, 2, 0.25);
 }
 
@@ -295,7 +288,6 @@ a:hover, a:focus {
   text-align: center;
 }
 
-/* ==================== SEÇÃO HERO ==================== */
 #hero {
   flex: 1;
   display: flex;
@@ -339,7 +331,6 @@ a:hover, a:focus {
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* ==================== SEÇÃO MISSÃO ==================== */
 .mission {
   padding: 5rem 2rem;
   text-align: center;
@@ -411,7 +402,6 @@ a:hover, a:focus {
   line-height: 1.6;
 }
 
-/* ==================== MODAL SOBRE NÓS ==================== */
 .modal {
   display: none;
   position: fixed;
@@ -508,7 +498,6 @@ a:hover, a:focus {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ==================== RESPONSIVIDADE ==================== */
 @media (max-width: 992px) {
   .links, .action_btn {
     display: none;

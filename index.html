@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xeque-Mate aos Problemas | Combata o Mal com Estratégia</title>
   <meta name="description" content="Denuncie e ajude a combater racismo, bullying, assédio, drogas, homofobia e cyberbullying. Juntos, damos xeque-mate nos problemas sociais." />
-  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <style>
-    /* Reset moderno com suporte a acessibilidade */
     * {
       margin: 0;
       padding: 0;
@@ -37,7 +34,6 @@
       outline-offset: 4px;
     }
 
-    /* === CENÁRIO 3D IMERSIVO === */
     .index {
       min-height: 100vh;
       display: flex;
@@ -47,7 +43,6 @@
       perspective: 1200px;
     }
 
-    /* Tabuleiro infinito em 3D com movimento contínuo */
     .chess-floor {
       position: absolute;
       top: 0;
@@ -72,7 +67,6 @@
       100% { transform: rotateX(60deg) translateZ(-50px) translateY(80px); }
     }
 
-    /* Overlay de profundidade com foco visual */
     .overlay {
       position: absolute;
       top: 0;
@@ -83,7 +77,6 @@
       z-index: -2;
     }
 
-    /* Efeito de luz de "Xeque-Mate" pulsante */
     .checkmate-light {
       position: absolute;
       top: 50%;
@@ -105,7 +98,6 @@
       100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.25); }
     }
 
-    /* Partículas flutuantes com profundidade */
     .particle {
       position: absolute;
       font-size: 1.8rem;
@@ -122,7 +114,6 @@
       50% { transform: translateY(-25px) rotate(10deg); opacity: 0.9; }
     }
 
-    /* === NAVBAR RESPONSIVA === */
     .navbar {
       width: 100%;
       height: 70px;
@@ -220,7 +211,6 @@
       transform: scale(0.97);
     }
 
-    /* Botão de menu móvel */
     .toggle_btn {
       color: #d4af37;
       font-size: 1.7rem;
@@ -237,7 +227,6 @@
       border-radius: 50%;
     }
 
-    /* Menu dropdown móvel */
     .dropdown_menu {
       position: absolute;
       top: 70px;
@@ -285,7 +274,6 @@
       text-align: center;
     }
 
-    /* === HERO === */
     #hero {
       flex: 1;
       display: flex;
@@ -329,7 +317,6 @@
       text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
     }
 
-    /* === MISSÃO === */
     .mission {
       padding: 5rem 2rem;
       text-align: center;
@@ -401,7 +388,6 @@
       line-height: 1.6;
     }
 
-    /* ==================== MODAL SOBRE NÓS ==================== */
     .modal {
       display: none;
       position: fixed;
@@ -498,7 +484,6 @@
       to { opacity: 1; transform: scale(1); }
     }
 
-    /* === RESPONSIVIDADE === */
     @media (max-width: 992px) {
       .links, .action_btn {
         display: none;
@@ -569,37 +554,31 @@
 </head>
 <body>
   <div class="index" id="page-container">
-    <!-- Fundo 3D -->
     <div class="chess-floor" aria-hidden="true"></div>
     <div class="overlay" aria-hidden="true"></div>
     <div class="checkmate-light" aria-hidden="true"></div>
 
-    <!-- Navbar -->
     <header>
       <nav class="navbar" aria-label="Navegação principal">
         <div class="logo">
           <a href="#" aria-label="Página inicial - Xeque-Mate aos Problemas">Xeque-Mate</a>
         </div>
 
-        <!-- Links para denúncias (desktop) -->
         <ul class="links" aria-label="Menu principal">
-          <li><a href="https://forms.gle/HUxd2VsReikEWFgM9">RACISMO</a></li>
-          <li><a href="https://forms.gle/4iFLd6LKj5SgUgKw5">BULLYING</a></li>
-          <li><a href="https://forms.gle/bmbgMyLLr6B7iusc6">ASSÉDIO</a></li>
-          <li><a href="https://forms.gle/5RMG5E7XDaeu5vYs7">DROGAS</a></li>
-          <li><a href="https://forms.gle/mBc14arWeJ9tyZ6V9">HOMOFOBIA</a></li>
-          <li><a href="https://forms.gle/FKSgLCVQH8J4Ftwe6">CYBERBULLYING</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfnC7MfBwQC3DVljN-Dq3lVCznKPj8oN4soIOXWJLQOV3PnOw/viewform?usp=dialog">RACISMO</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScTP5B2YzD3olTnqvTrnueUFuZICNAsJ6g2soJiWVcjCwPgkg/viewform?usp=dialog">BULLYING</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaTZO7Q9KrWmcx2UnK1sZpM2_Y65itGz1d9V-GxhGGj5h7XQ/viewform?usp=dialog">ASSÉDIO</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScvgvheRVP33XQmcbl-upvKrPdpA6KRxQiwlZm_w-Rc0JfFNQ/viewform?usp=dialog">DROGAS</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScuUz1U9ZVY6cjDeMAxyUMFIMODU9H-Y9-mkrgISzw0IgDABw/viewform?usp=dialog">HOMOFOBIA</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScTawzObamU7baIiLSvNQLzUehwsxqNRKCKkkP_5Q0Ool4ReQ/viewform?usp=dialog">CYBERBULLYING</a></li>
         </ul>
 
-        <!-- Botão SOBRE NÓS com modal -->
         <a href="#" class="action_btn" id="aboutBtn">SOBRE NÓS</a>
 
-        <!-- Botão de menu móvel -->
         <button class="toggle_btn" aria-label="Abrir menu">
           <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
 
-        <!-- Menu dropdown móvel -->
         <ul class="dropdown_menu" aria-label="Menu móvel">
           <li><a href="https://forms.gle/HUxd2VsReikEWFgM9">RACISMO</a></li>
           <li><a href="https://forms.gle/4iFLd6LKj5SgUgKw5">BULLYING</a></li>
@@ -612,14 +591,12 @@
       </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
       <section id="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">Xeque-Mate aos Problemas</h1>
         <p>Soluções estratégicas para desafios sociais. Denuncie, ajude, transforme.</p>
       </section>
 
-      <!-- Seção de Missão -->
       <section class="mission" aria-labelledby="mission-title">
         <h2 id="mission-title">Nossa Missão</h2>
         <p>
@@ -647,24 +624,20 @@
       </section>
     </main>
 
-    <!-- 🖼️ MODAL "SOBRE NÓS" COM FOTOS E TEXTO -->
     <div class="modal" id="aboutModal">
       <div class="modal-content">
         <span class="close" id="closeModal">&times;</span>
         <div class="about-team">
-          <!-- Rafael Del Antonio -->
           <div class="team-member">
             <h2>Rafael Del Antonio</h2>
-            <img src="rafael.jpg" alt="Rafael Del Antonio" class="member-photo">
+            <img src="c:\Users\COL.PROFESSORES\Pictures\Rafael.png" alt="Rafael Del Antonio" class="member-photo">
             <p>
               Olá! Me chamo Rafael, sou aluno do 3º ano do Colégio Professores e o principal desenvolvedor deste site. A ideia de criar esse projeto surgiu após realizar pesquisas nas escolas, com o objetivo de abordar temas importantes e promover a conscientização sobre questões sociais.
             </p>
           </div>
-
-          <!-- Leonardo Oliveira dos Santos -->
           <div class="team-member">
             <h2>Leonardo Oliveira dos Santos</h2>
-            <img src="leonardo.jpg" alt="Leonardo Oliveira dos Santos" class="member-photo">
+            <img src="c:\Users\COL.PROFESSORES\Pictures\leo.png" alt="Leonardo Oliveira dos Santos" class="member-photo">
             <p>
               Olá! Meu nome é Leonardo Oliveira dos Santos, sou orientador do projeto e professor no Colégio Professores. Acompanhei de perto o desenvolvimento desta iniciativa, que nasceu do interesse em promover a reflexão e o engajamento dos alunos em questões sociais relevantes. Este site é fruto de muito empenho, pesquisa e dedicação, com o propósito de gerar impacto positivo na comunidade escolar e além.
             </p>
@@ -674,11 +647,7 @@
     </div>
   </div>
 
-  <!-- Áudio de fundo (opcional) -->
-  <!-- <audio id="bg-music" src="msxadrez.mp3" loop preload="auto"></audio> -->
-
   <script>
-    // Toggle Menu Mobile
     const toggleBtn = document.querySelector('.toggle_btn');
     const toggleBtnIcon = document.querySelector('.toggle_btn i');
     const dropdownMenu = document.querySelector('.dropdown_menu');
@@ -688,7 +657,6 @@
       toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
     });
 
-    // Efeito de parallax sutil no hero e partículas
     const hero = document.getElementById('hero');
     const particles = document.querySelectorAll('.particle');
     const { innerWidth: w, innerHeight: h } = window;
@@ -704,12 +672,10 @@
       }
     });
 
-    // Navbar com scroll
     window.addEventListener('scroll', () => {
       document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Gerar partículas decorativas
     const symbols = ['♔', '♕', '♖', '♗', '♘', '♙', '♚', '♛', '♜', '♝', '♞', '♟', '⚠️', '💡', '🛡️', '❤️'];
     const container = document.getElementById('page-container');
 
@@ -725,37 +691,28 @@
       container.appendChild(p);
     }
 
-    // ==================== MODAL SOBRE NÓS ====================
     const modal = document.getElementById('aboutModal');
     const aboutBtn = document.getElementById('aboutBtn');
     const aboutBtnMobile = document.getElementById('aboutBtnMobile');
     const closeModal = document.getElementById('closeModal');
 
-    // Abre o modal
     const openModal = (e) => {
       e.preventDefault();
       modal.style.display = 'flex';
       setTimeout(() => modal.classList.add('show'), 10);
     };
 
-    // Fecha o modal
     const closeModalFn = () => {
       modal.classList.remove('show');
-      setTimeout(() => {
-        modal.style.display = 'none';
-      }, 300);
+      setTimeout(() => { modal.style.display = 'none'; }, 300);
     };
 
-    // Eventos
     aboutBtn.addEventListener('click', openModal);
     aboutBtnMobile.addEventListener('click', openModal);
     closeModal.addEventListener('click', closeModalFn);
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeModalFn();
     });
-
-    // Evitar autoplay de áudio (requer interação do usuário)
-    // document.getElementById('bg-music').volume = 0.3;
   </script>
 </body>
 </html>
